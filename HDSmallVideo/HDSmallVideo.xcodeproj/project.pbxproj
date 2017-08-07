@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					6FAC170C1F381D4400CC04EA = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = WQD3WTCE79;
 						ProvisioningStyle = Automatic;
 					};
 					6FAC17251F381D4400CC04EA = {
@@ -424,7 +425,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WQD3WTCE79;
 				INFOPLIST_FILE = HDSmallVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dong.HDSmallVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,7 +438,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WQD3WTCE79;
 				INFOPLIST_FILE = HDSmallVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dong.HDSmallVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
