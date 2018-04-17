@@ -10,4 +10,6 @@
 
 @interface HDVideoController : UIViewController
 
+-(void)startVideo;
+
 @end

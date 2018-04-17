@@ -17,6 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor redColor];
+}
+
+- (void)startVideo{
+    
+    UIWindow *keyWindow = [UIApplication sharedApplication].delegate.window;
+    [keyWindow addSubview:self.view];
+    
 }
 
 - (void)didReceiveMemoryWarning {

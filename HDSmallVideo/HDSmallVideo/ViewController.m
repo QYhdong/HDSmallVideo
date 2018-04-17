@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HDVideoController.h"
 
 @interface ViewController ()
 
@@ -18,13 +19,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *btn = [[UIButton alloc]init];
+    btn.frame = CGRectMake(20, 100, 50, 30);
+    [btn setTitle:@"视频" forState:(UIControlStateNormal)];
+    [btn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:(UIControlEventTouchUpInside)];
+    
+    [self.view addSubview:btn];
+    
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)btnClick{
+    
+    HDVideoController * videoVc = [[HDVideoController alloc]init];
+    [videoVc startVideo];
+    
 }
-
 
 @end
