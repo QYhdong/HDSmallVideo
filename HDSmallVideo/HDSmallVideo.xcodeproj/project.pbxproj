@@ -16,6 +16,7 @@
 		6FAC17201F381D4400CC04EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAC171E1F381D4400CC04EA /* LaunchScreen.storyboard */; };
 		6FAC172B1F381D4400CC04EA /* HDSmallVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC172A1F381D4400CC04EA /* HDSmallVideoTests.m */; };
 		6FAC17361F381D4400CC04EA /* HDSmallVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC17351F381D4400CC04EA /* HDSmallVideoUITests.m */; };
+		6FC4E46020EB72D900347F68 /* HDVideoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC4E45F20EB72D900347F68 /* HDVideoConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		6FAC17311F381D4400CC04EA /* HDSmallVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDSmallVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAC17351F381D4400CC04EA /* HDSmallVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDSmallVideoUITests.m; sourceTree = "<group>"; };
 		6FAC17371F381D4400CC04EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FC4E45E20EB72D900347F68 /* HDVideoConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDVideoConfig.h; sourceTree = "<group>"; };
+		6FC4E45F20EB72D900347F68 /* HDVideoConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDVideoConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 			children = (
 				6F3D2E262084BDE90040D011 /* HDVideoController.h */,
 				6F3D2E272084BDE90040D011 /* HDVideoController.m */,
+				6FC4E45E20EB72D900347F68 /* HDVideoConfig.h */,
+				6FC4E45F20EB72D900347F68 /* HDVideoConfig.m */,
 			);
 			path = HdSmallVideo;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FC4E46020EB72D900347F68 /* HDVideoConfig.m in Sources */,
 				6FAC17181F381D4400CC04EA /* ViewController.m in Sources */,
 				6F3D2E282084BDE90040D011 /* HDVideoController.m in Sources */,
 				6FAC17151F381D4400CC04EA /* AppDelegate.m in Sources */,
