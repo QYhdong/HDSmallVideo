@@ -59,6 +59,13 @@
 
 
 #pragma mark  方法列表
+
+-(void)setRecordState:(HDRecordState *)recordState{
+    if (_recordState != recordState){
+        _recordState = recordState;
+    }
+}
+
 -(void)enterBackground{
     
 }
@@ -71,6 +78,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becomeActive) name:UIApplicationDidEnterBackgroundNotification object:nil];
     
+    _recordState = HDRecordStateInit;
 }
 
 //视频输入

@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger,HDVideoType){
 typedef NS_ENUM(NSInteger,HDRecordState){
     HDRecordStateInit = 0,
     HDRecordStatePause,
-     HDRecordStateDoing,
+    HDRecordStateDoing,
     HDRecordStateFinish
 };
 
@@ -33,5 +33,7 @@ typedef NS_ENUM(NSInteger,HDRecordState){
 @end
 
 @interface HDVideoConfig : NSObject
+
+@property (nonatomic,assign) HDRecordState *recordState;
 
 @end
