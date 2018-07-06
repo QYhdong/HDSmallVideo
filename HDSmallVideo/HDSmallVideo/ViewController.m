@@ -34,7 +34,10 @@
 -(void)btnClick{
     
     HDVideoController * videoVc = [[HDVideoController alloc]init];
-    [videoVc startVideo];
+    
+    UINavigationController *videoVcNav = [[UINavigationController alloc]initWithRootViewController:videoVc];
+    
+    [self presentViewController:videoVcNav animated:YES completion:nil];
     
 }
 

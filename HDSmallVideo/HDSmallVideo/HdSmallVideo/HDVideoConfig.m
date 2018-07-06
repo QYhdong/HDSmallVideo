@@ -41,6 +41,7 @@
 //开始录制视频
 - (void)setupVideoConfig{
 
+    [self videoInit];
     [self startInputVideo];
     [self startInputAudio];
     [self setupFileOut];

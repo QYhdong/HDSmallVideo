@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor redColor];
+//    self.view.backgroundColor = [UIColor redColor];
     
 //    //录制按钮
 //    UIButton *startShootBtn = [[UIButton alloc]initWithFrame:(CGRectMake(100, 100, 60, 60))];
@@ -39,7 +39,8 @@
     
 }
 
--(void)startVideo{
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     
 }
 
