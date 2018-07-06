@@ -24,9 +24,22 @@
 
 @implementation HDVideoConfig
 
+//初始化
+-(instancetype)initVideoViewWithType:(HDVideoType)type andSuperView:(UIView *)superView{
+    
+    self = [super init];
+    if (self){
+        _superView = superView;
+        [self setupVideoConfig];
+        
+    }
+    
+    return self;
+}
+
 
 //开始录制视频
-- (void)startVideo{
+- (void)setupVideoConfig{
 
     [self startInputVideo];
     [self startInputAudio];

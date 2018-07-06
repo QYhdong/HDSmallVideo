@@ -28,6 +28,10 @@
 -(instancetype)initWithType:(HDVideoType)screenType{
     self = [super initWithFrame:kScreenSize];
     if (self){
+        
+        _videoConfig = [[HDVideoConfig alloc]init];
+        
+        
         [self setupUI];
     }
     return self;

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #define kScreenSize [UIScreen mainScreen].bounds
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
@@ -35,6 +36,8 @@ typedef NS_ENUM(NSInteger,HDRecordState){
 
 @interface HDVideoConfig : NSObject
 
-@property (nonatomic,assign) HDRecordState *recordState;
+@property (nonatomic,assign) HDRecordState *recordState;        //录制状态
+
+-(instancetype)initVideoViewWithType:(HDVideoType)type andSuperView:(UIView *)superView;                           //初始化
 
 @end
