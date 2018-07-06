@@ -31,16 +31,14 @@
     if (self){
         _superView = superView;
         [self setupVideoConfig];
-        
     }
-    
     return self;
 }
 
 
 //开始录制视频
 - (void)setupVideoConfig{
-
+    
     [self videoInit];
     [self startInputVideo];
     [self startInputAudio];
