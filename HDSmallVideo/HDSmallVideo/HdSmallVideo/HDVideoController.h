@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "HDVideoView.h"
 
 @interface HDVideoController : UIViewController
 
 -(void)startVideo;
+@property (nonatomic,strong) HDVideoView *showVideoView;
 
 @end

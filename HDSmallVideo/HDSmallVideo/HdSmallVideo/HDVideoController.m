@@ -27,12 +27,15 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
     
-    //录制按钮
-    UIButton *startShootBtn = [[UIButton alloc]initWithFrame:(CGRectMake(100, 100, 60, 60))];
-    [startShootBtn setTitle:@"开始拍摄" forState:(UIControlStateNormal)];
-    [startShootBtn addTarget:self action:@selector(startVideo) forControlEvents:(UIControlEventTouchUpInside)];
+//    //录制按钮
+//    UIButton *startShootBtn = [[UIButton alloc]initWithFrame:(CGRectMake(100, 100, 60, 60))];
+//    [startShootBtn setTitle:@"开始拍摄" forState:(UIControlStateNormal)];
+//    [startShootBtn addTarget:self action:@selector(startVideo) forControlEvents:(UIControlEventTouchUpInside)];
+//
+//    [self.view addSubview:startShootBtn];
     
-    [self.view addSubview:startShootBtn];
+    _showVideoView = [[HDVideoView alloc]initWithType:(TypeFull)];
+    [self.view addSubview:_showVideoView];
     
 }
 
