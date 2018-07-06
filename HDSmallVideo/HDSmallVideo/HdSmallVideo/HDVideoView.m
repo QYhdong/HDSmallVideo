@@ -8,7 +8,14 @@
 
 #import "HDVideoView.h"
 
+@interface HDVideoView()
+
+@property (nonatomic,strong) UIView*topChooseView;          //顶部选择框
+
+@end
+
 @implementation HDVideoView
+
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -17,5 +24,25 @@
     // Drawing code
 }
 */
+
+-(instancetype)initWithType:(HDVideoType)screenType{
+    self = [super initWithFrame:kScreenSize];
+    if (self){
+        [self setupUI];
+    }
+    return self;
+}
+
+
+//view UI布局
+-(void)setupUI{
+    
+    _topChooseView = [[UIView alloc]initWithFrame:(CGRectMake(0, 0, kScreenWidth, 44))];
+    [self addSubview:_topChooseView];
+    
+    
+    
+}
+
 
 @end

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+#define kScreenSize [UIScreen mainScreen].bounds
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
