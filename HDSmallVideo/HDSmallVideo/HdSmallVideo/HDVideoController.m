@@ -34,6 +34,8 @@
 //
 //    [self.view addSubview:startShootBtn];
     
+    self.navigationController.navigationBarHidden = YES;
+    self.view.backgroundColor = [UIColor blackColor];
     _showVideoView = [[HDVideoView alloc]initWithType:(TypeFull)];
     [self.view addSubview:_showVideoView];
     

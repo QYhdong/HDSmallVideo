@@ -29,7 +29,7 @@
     self = [super initWithFrame:kScreenSize];
     if (self){
         
-        self.backgroundColor = [UIColor whiteColor];
+//        self.backgroundColor = [UIColor whiteColor];
         
         _videoConfig = [[HDVideoConfig alloc]initVideoViewWithType:screenType andSuperView:self];
         

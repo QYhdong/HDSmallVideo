@@ -23,12 +23,30 @@
     self.view.backgroundColor = [UIColor whiteColor];
     UIButton *btn = [[UIButton alloc]init];
     btn.frame = CGRectMake(20, 100, 50, 30);
+    btn.layer.borderColor = ([[UIColor orangeColor] CGColor]);
+    btn.layer.borderWidth = 0.5;
+    btn.layer.cornerRadius = 2;
+    btn.layer.masksToBounds = YES;
     [btn setTitle:@"视频" forState:(UIControlStateNormal)];
     [btn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
     [btn addTarget:self action:@selector(btnClick) forControlEvents:(UIControlEventTouchUpInside)];
     
     [self.view addSubview:btn];
  
+//    UILabel *lll = [[UILabel alloc]init];
+//    lll.frame = CGRectMake(100, 100, 36, 15);
+//    lll.textAlignment = UITextAlignmentCenter;
+//    lll.layer.borderColor = ([[UIColor orangeColor] CGColor]);
+//    lll.layer.borderWidth = 1;
+//    lll.layer.cornerRadius = 3;
+//    lll.layer.masksToBounds = YES;
+//    lll.font = [UIFont systemFontOfSize:10];
+//    lll.text = @"个人";
+//    lll.textColor = [UIColor orangeColor];
+//
+////    lll.adjustsFontForContentSizeCategory = YES;
+//    [self.view addSubview:lll];
+    
 }
 
 -(void)btnClick{

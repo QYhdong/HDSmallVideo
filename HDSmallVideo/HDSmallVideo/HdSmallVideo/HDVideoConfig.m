@@ -30,20 +30,21 @@
     self = [super init];
     if (self){
         _superView = superView;
-        [self setupVideoConfig];
+        [self setupVideoConfig:type];
     }
     return self;
 }
 
 
 //开始录制视频
-- (void)setupVideoConfig{
+- (void)setupVideoConfig:(HDVideoType)type{
     
+    //初始化
     [self videoInit];
     [self startInputVideo];
     [self startInputAudio];
     [self setupFileOut];
-    [self setUpPreviewLayerWithType:TypeOne];
+    [self setUpPreviewLayerWithType:type];
     
     [_session startRunning];
 }
@@ -53,8 +54,8 @@
 -(AVCaptureSession *)session{
     if(!_session){
         _session = [[AVCaptureSession alloc]init];
-        if ([_session canSetSessionPreset:AVCaptureSessionPreset640x480]){
-            [_session setSessionPreset:AVCaptureSessionPreset640x480];
+        if ([_session canSetSessionPreset:AVCaptureSessionPresetHigh]){
+            [_session setSessionPreset:AVCaptureSessionPresetHigh];
         }
     }
     return _session;
