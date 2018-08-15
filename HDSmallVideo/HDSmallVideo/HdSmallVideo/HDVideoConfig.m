@@ -76,6 +76,7 @@
 -(void)setRecordState:(HDRecordState *)recordState{
     if (_recordState != recordState){
         _recordState = recordState;
+        
     }
 }
 

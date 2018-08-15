@@ -100,6 +100,13 @@
 			path = HdSmallVideo;
 			sourceTree = "<group>";
 		};
+		6F47BCB6212412D60056B308 /* test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 		6FAC17041F381D4400CC04EA = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +139,7 @@
 				6FAC171C1F381D4400CC04EA /* Assets.xcassets */,
 				6FAC171E1F381D4400CC04EA /* LaunchScreen.storyboard */,
 				6FAC17211F381D4400CC04EA /* Info.plist */,
+				6F47BCB6212412D60056B308 /* test */,
 				6FAC17101F381D4400CC04EA /* Supporting Files */,
 			);
 			path = HDSmallVideo;
