@@ -11,9 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 //转场动画类
-@interface FloatTransitionAnimator : NSObject
+@interface FloatTransitionAnimator : NSObject<>
 
 
+//
 
 @end
 
