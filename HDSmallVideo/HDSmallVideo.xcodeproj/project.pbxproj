@@ -107,6 +107,13 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		6FA7D0C1217498690029350C /* HdFloatingBall(悬浮球) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "HdFloatingBall(悬浮球)";
+			sourceTree = "<group>";
+		};
 		6FAC17041F381D4400CC04EA = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +137,7 @@
 		6FAC170F1F381D4400CC04EA /* HDSmallVideo */ = {
 			isa = PBXGroup;
 			children = (
+				6FA7D0C1217498690029350C /* HdFloatingBall(悬浮球) */,
 				6F3D2E252084BDC10040D011 /* HdSmallVideo */,
 				6FAC17131F381D4400CC04EA /* AppDelegate.h */,
 				6FAC17141F381D4400CC04EA /* AppDelegate.m */,
@@ -463,7 +471,7 @@
 				INFOPLIST_FILE = HDSmallVideo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dong.HDSmallVideo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tim.WeChatFloatBall--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -476,7 +484,7 @@
 				INFOPLIST_FILE = HDSmallVideo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dong.HDSmallVideo;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tim.WeChatFloatBall--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

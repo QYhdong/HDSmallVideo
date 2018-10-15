@@ -33,6 +33,8 @@
         
         _videoConfig = [[HDVideoConfig alloc]initVideoViewWithType:screenType andSuperView:self];
         
+        
+        
         [self setupUI];
     }
     return self;

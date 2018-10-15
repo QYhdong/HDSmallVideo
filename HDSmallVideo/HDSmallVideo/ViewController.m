@@ -33,19 +33,18 @@
     
     [self.view addSubview:btn];
  
-//    UILabel *lll = [[UILabel alloc]init];
-//    lll.frame = CGRectMake(100, 100, 36, 15);
-//    lll.textAlignment = UITextAlignmentCenter;
-//    lll.layer.borderColor = ([[UIColor orangeColor] CGColor]);
-//    lll.layer.borderWidth = 1;
-//    lll.layer.cornerRadius = 3;
-//    lll.layer.masksToBounds = YES;
-//    lll.font = [UIFont systemFontOfSize:10];
-//    lll.text = @"个人";
-//    lll.textColor = [UIColor orangeColor];
-//
-////    lll.adjustsFontForContentSizeCategory = YES;
-//    [self.view addSubview:lll];
+    UILabel *lll = [[UILabel alloc]init];
+    lll.frame = CGRectMake(100, 100, 36, 15);
+    lll.textAlignment = UITextAlignmentCenter;
+    lll.layer.borderColor = ([[UIColor orangeColor] CGColor]);
+    lll.layer.borderWidth = 1;
+    lll.layer.cornerRadius = 3;
+    lll.layer.masksToBounds = YES;
+    lll.font = [UIFont systemFontOfSize:15];
+    lll.text = @"个人";
+    lll.textColor = [UIColor orangeColor];
+    [self.view addSubview:lll];
+    
     
 }
 
