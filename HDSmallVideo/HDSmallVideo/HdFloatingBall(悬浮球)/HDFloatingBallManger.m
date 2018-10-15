@@ -10,6 +10,25 @@
 
 @implementation HDFloatingBallManger
 
+//单例对象
++(instancetype)shared{
+    static HDFloatingBallManger *manger = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
+        manger = [[super alloc]init];
+        
+    });
+    
+    return manger;
+}
 
+-(id<UIViewControllerAnimatedTransitioning>)floatingBallForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
+    
+}
+
+-(id<UIViewControllerInteractiveTransitioning>)floatingBallInteractionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController{
+    
+}
 
 @end
