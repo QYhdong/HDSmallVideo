@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HDVideoController.h"
+#import "HDNextViewController.h"
 
 @interface ViewController ()
 
@@ -53,7 +54,7 @@
 
 -(void)pushBtnClick{
  
-    
+    [self.navigationController pushViewController:[HDNextViewController new] animated:YES];
     
 }
 

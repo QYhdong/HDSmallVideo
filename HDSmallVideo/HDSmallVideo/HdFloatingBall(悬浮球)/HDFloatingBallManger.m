@@ -9,12 +9,18 @@
 #import "HDFloatingBallManger.h"
 #import "FloatTransitionAnimator.h"
 
+//悬浮球宽高
+#define FloatWidth  60
+
 @interface HDFloatingBallManger()<UIGestureRecognizerDelegate>
 
 //需要监控的类
 @property (nonatomic,strong) NSMutableArray<NSString *> *monitorVcClasses;
 
-
+// 悬浮球加载的控制器
+@property (nonatomic, strong) UIViewController *floatViewController;
+//悬浮球
+@property (nonatomic, strong) UIImageView *floatView;
 
 @end
 
@@ -34,11 +40,25 @@
 }
 
 -(id<UIViewControllerAnimatedTransitioning>)floatingBallForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
-    
+    FloatTransitionAnimator *animator;
+    UIViewController *vc;
+    if (operation == UINavigationControllerOperationPush){
+        if (toVC == self.floatViewController){
+            animator = [self createAnimatorWithOperation:operation];
+        }
+    }
+    return animator;
 }
 
 -(id<UIViewControllerInteractiveTransitioning>)floatingBallInteractionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController{
-    
+    UIPercentDrivenInteractiveTransition *interactive = [UIPercentDrivenInteractiveTransition new];
+    return interactive;
+}
+
+- (FloatTransitionAnimator *)createAnimatorWithOperation:(UINavigationControllerOperation)operation
+{
+    return [FloatTransitionAnimator animationWithStartCenter:self.floatView.center radius:FloatWidth / 2.0 operation:operation];
+
 }
 
 -(void)didShowViewController:(UIViewController *)viewController navigationController:(UINavigationController *)navigationController{
