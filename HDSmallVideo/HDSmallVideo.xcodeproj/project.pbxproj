@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6F361FB720EE084400F839B8 /* HDVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F361FB620EE084400F839B8 /* HDVideoView.m */; };
 		6F3D2E282084BDE90040D011 /* HDVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3D2E272084BDE90040D011 /* HDVideoController.m */; };
+		6F4938962175CBA6002F5709 /* UIViewController+CurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4938952175CBA6002F5709 /* UIViewController+CurrentViewController.m */; };
 		6FA7D0C421749E2A0029350C /* HDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA7D0C321749E2A0029350C /* HDNavigationController.m */; };
 		6FA7D0C72174A0FB0029350C /* HDFloatingBallManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA7D0C62174A0FB0029350C /* HDFloatingBallManger.m */; };
 		6FA7D0CA2174A3DE0029350C /* FloatTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FA7D0C92174A3DE0029350C /* FloatTransitionAnimator.m */; };
@@ -45,6 +46,8 @@
 		6F361FB620EE084400F839B8 /* HDVideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDVideoView.m; sourceTree = "<group>"; };
 		6F3D2E262084BDE90040D011 /* HDVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDVideoController.h; sourceTree = "<group>"; };
 		6F3D2E272084BDE90040D011 /* HDVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDVideoController.m; sourceTree = "<group>"; };
+		6F4938942175CBA6002F5709 /* UIViewController+CurrentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CurrentViewController.h"; sourceTree = "<group>"; };
+		6F4938952175CBA6002F5709 /* UIViewController+CurrentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CurrentViewController.m"; sourceTree = "<group>"; };
 		6FA7D0C221749E2A0029350C /* HDNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNavigationController.h; sourceTree = "<group>"; };
 		6FA7D0C321749E2A0029350C /* HDNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNavigationController.m; sourceTree = "<group>"; };
 		6FA7D0C52174A0FB0029350C /* HDFloatingBallManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDFloatingBallManger.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				6FA7D0C62174A0FB0029350C /* HDFloatingBallManger.m */,
 				6FA7D0C82174A3DE0029350C /* FloatTransitionAnimator.h */,
 				6FA7D0C92174A3DE0029350C /* FloatTransitionAnimator.m */,
+				6F4938942175CBA6002F5709 /* UIViewController+CurrentViewController.h */,
+				6F4938952175CBA6002F5709 /* UIViewController+CurrentViewController.m */,
 			);
 			path = "HdFloatingBall(悬浮球)";
 			sourceTree = "<group>";
@@ -335,6 +340,7 @@
 				6FAC17151F381D4400CC04EA /* AppDelegate.m in Sources */,
 				6FA7D0C421749E2A0029350C /* HDNavigationController.m in Sources */,
 				6F361FB720EE084400F839B8 /* HDVideoView.m in Sources */,
+				6F4938962175CBA6002F5709 /* UIViewController+CurrentViewController.m in Sources */,
 				6FA7D0C72174A0FB0029350C /* HDFloatingBallManger.m in Sources */,
 				6FAC17121F381D4400CC04EA /* main.m in Sources */,
 			);

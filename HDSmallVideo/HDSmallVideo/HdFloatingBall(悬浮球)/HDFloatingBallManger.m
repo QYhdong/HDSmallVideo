@@ -7,6 +7,16 @@
 //
 
 #import "HDFloatingBallManger.h"
+#import "FloatTransitionAnimator.h"
+
+@interface HDFloatingBallManger()<UIGestureRecognizerDelegate>
+
+//需要监控的类
+@property (nonatomic,strong) NSMutableArray<NSString *> *monitorVcClasses;
+
+
+
+@end
 
 @implementation HDFloatingBallManger
 
@@ -28,6 +38,30 @@
 }
 
 -(id<UIViewControllerInteractiveTransitioning>)floatingBallInteractionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController{
+    
+}
+
+-(void)didShowViewController:(UIViewController *)viewController navigationController:(UINavigationController *)navigationController{
+    
+    if ([self.monitorVcClasses containsObject:NSStringFromClass([viewController class])]){
+        
+        navigationController.interactivePopGestureRecognizer.enabled = NO;
+        //边缘手势
+        UIScreenEdgePanGestureRecognizer *gesture = [[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(handleNavigationTransition:)];
+        gesture.edges = UIRectEdgeLeft;
+        gesture.delegate = self;
+        [viewController.view addGestureRecognizer:gesture];
+    
+    }else{
+        navigationController.interactivePopGestureRecognizer.enabled = YES;
+        
+        }
+}
+
+#pragma mark 返回手势
+-(void)handleNavigationTransition:(UIScreenEdgePanGestureRecognizer *)gestureRecognizer{
+    
+    
     
 }
 

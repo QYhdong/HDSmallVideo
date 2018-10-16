@@ -22,6 +22,9 @@ NS_ASSUME_NONNULL_BEGIN
 //交互
 -(id<UIViewControllerInteractiveTransitioning>)floatingBallInteractionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController;
 
+
+-(void)didShowViewController:(UIViewController *)viewController navigationController:(UINavigationController *)navigationController;
+
 @end
 
 NS_ASSUME_NONNULL_END

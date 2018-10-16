@@ -7,15 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 //转场动画类
-@interface FloatTransitionAnimator : NSObject<>
+@interface FloatTransitionAnimator : NSObject<UIViewControllerAnimatedTransitioning>
 
 
-//
++(instancetype)animationWithStartCenter:(CGPoint)center redius:(CGFloat)redius operation:(UINavigationControllerOperation)operation;
+
 
 @end
 
 NS_ASSUME_NONNULL_END
+

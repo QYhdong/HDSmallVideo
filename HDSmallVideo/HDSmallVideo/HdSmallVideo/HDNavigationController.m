@@ -7,6 +7,7 @@
 //
 
 #import "HDNavigationController.h"
+#import "HDFloatingBallManger.h"
 
 @interface HDNavigationController ()<UIGestureRecognizerDelegate,UINavigationControllerDelegate>
 
@@ -27,6 +28,13 @@
 
 //用户交互
 -(id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController{
+    
+}
+
+//添加滑动手势
+-(void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
+    [[HDFloatingBallManger shared] didShowViewController:viewController navigationController:navigationController];
     
 }
 
