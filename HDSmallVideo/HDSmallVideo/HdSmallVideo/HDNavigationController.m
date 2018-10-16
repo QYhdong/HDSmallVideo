@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.delegate = self;
+    self.interactivePopGestureRecognizer.delegate = self;
 }
 
 //代理方法

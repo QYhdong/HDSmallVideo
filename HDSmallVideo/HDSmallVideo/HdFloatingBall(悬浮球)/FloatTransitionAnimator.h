@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FloatTransitionAnimator : NSObject<UIViewControllerAnimatedTransitioning>
 
 
-+(instancetype)animationWithStartCenter:(CGPoint)center radius:(CGFloat)redius operation:(UINavigationControllerOperation)operation;
++(instancetype)animationWithStartCenter:(CGPoint)center radius:(CGFloat)radius operation:(UINavigationControllerOperation)operation;
 
 
 @end

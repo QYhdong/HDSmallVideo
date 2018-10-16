@@ -48,7 +48,12 @@
     
     
     UIButton *pushBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    [pushBtn setTitle:@"跳转界面" forState:(UIControlStateNormal)];
+    [pushBtn setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
     [pushBtn addTarget:self action:@selector(pushBtnClick) forControlEvents:(UIControlEventTouchUpInside)];
+    pushBtn.frame = CGRectMake(0, 0, 100, 50);
+    pushBtn.center = self.view.center;
+    [self.view addSubview:pushBtn];
     
 }
 
