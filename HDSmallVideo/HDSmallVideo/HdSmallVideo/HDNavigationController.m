@@ -23,12 +23,12 @@
 //代理方法
 //自定义转场动画
 -(id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
-    
+    return [[HDFloatingBallManger shared] floatingBallForOperation:operation fromViewController:fromVC toViewController:toVC];
 }
 
 //用户交互
 -(id<UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController{
-    
+    return [[HDFloatingBallManger shared] floatingBallInteractionControllerForAnimationController:animationController];
 }
 
 //添加滑动手势
