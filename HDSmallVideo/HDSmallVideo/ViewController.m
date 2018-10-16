@@ -46,7 +46,17 @@
     [self.view addSubview:lll];
     
     
+    UIButton *pushBtn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    [pushBtn addTarget:self action:@selector(pushBtnClick) forControlEvents:(UIControlEventTouchUpInside)];
+    
 }
+
+-(void)pushBtnClick{
+ 
+    
+    
+}
+
 
 -(void)btnClick{
     
