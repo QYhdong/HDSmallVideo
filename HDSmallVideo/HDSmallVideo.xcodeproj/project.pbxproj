@@ -124,7 +124,7 @@
 			path = test;
 			sourceTree = "<group>";
 		};
-		6FA7D0C1217498690029350C /* HdFloatingBall(悬浮球) */ = {
+		6FA7D0C1217498690029350C /* HdFloatingBall(悬浮球效果) */ = {
 			isa = PBXGroup;
 			children = (
 				6FA7D0C52174A0FB0029350C /* HDFloatingBallManger.h */,
@@ -134,7 +134,7 @@
 				6F4938942175CBA6002F5709 /* UIViewController+CurrentViewController.h */,
 				6F4938952175CBA6002F5709 /* UIViewController+CurrentViewController.m */,
 			);
-			path = "HdFloatingBall(悬浮球)";
+			path = "HdFloatingBall(悬浮球效果)";
 			sourceTree = "<group>";
 		};
 		6FAC17041F381D4400CC04EA = {
@@ -160,7 +160,7 @@
 		6FAC170F1F381D4400CC04EA /* HDSmallVideo */ = {
 			isa = PBXGroup;
 			children = (
-				6FA7D0C1217498690029350C /* HdFloatingBall(悬浮球) */,
+				6FA7D0C1217498690029350C /* HdFloatingBall(悬浮球效果) */,
 				6F3D2E252084BDC10040D011 /* HdSmallVideo */,
 				6FAC17131F381D4400CC04EA /* AppDelegate.h */,
 				6FAC17141F381D4400CC04EA /* AppDelegate.m */,
