@@ -49,4 +49,14 @@
     return currentVC;
 }
 
++ (UINavigationController *)currentNavigationController
+{
+    return [self currentViewController].navigationController;
+}
+
++ (UITabBarController *)currentTabBarController
+{
+    return [self currentViewController].tabBarController;
+}
+
 @end

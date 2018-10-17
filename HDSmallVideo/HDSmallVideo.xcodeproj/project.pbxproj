@@ -59,6 +59,7 @@
 		6F4AB22A2176DDF2006E61D6 /* FloatBallResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FloatBallResource.bundle; sourceTree = "<group>"; };
 		6F4AB22C2176EB7C006E61D6 /* UIView+FloatFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FloatFrame.h"; sourceTree = "<group>"; };
 		6F4AB22D2176EB7C006E61D6 /* UIView+FloatFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FloatFrame.m"; sourceTree = "<group>"; };
+		6F4AB22F217705CF006E61D6 /* FloatBallDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatBallDefine.h; sourceTree = "<group>"; };
 		6FA7D0C221749E2A0029350C /* HDNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDNavigationController.h; sourceTree = "<group>"; };
 		6FA7D0C321749E2A0029350C /* HDNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDNavigationController.m; sourceTree = "<group>"; };
 		6FA7D0C52174A0FB0029350C /* HDFloatingBallManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDFloatingBallManger.h; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 				6FA7D0C62174A0FB0029350C /* HDFloatingBallManger.m */,
 				6FA7D0C82174A3DE0029350C /* FloatTransitionAnimator.h */,
 				6FA7D0C92174A3DE0029350C /* FloatTransitionAnimator.m */,
+				6F4AB22F217705CF006E61D6 /* FloatBallDefine.h */,
 				6F4938942175CBA6002F5709 /* UIViewController+CurrentViewController.h */,
 				6F4938952175CBA6002F5709 /* UIViewController+CurrentViewController.m */,
 				6F49389A217602AA002F5709 /* OneFourthBallView.h */,

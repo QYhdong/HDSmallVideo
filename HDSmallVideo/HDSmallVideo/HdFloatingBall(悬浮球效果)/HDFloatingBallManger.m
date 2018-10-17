@@ -12,6 +12,11 @@
 //悬浮球宽高
 #define FloatWidth  60
 
+NSString *const kPopInteractiveKey = @"kPopInteractiveKey";
+NSString *const kAnimatorKey = @"kAnimatorKey";
+//是否为右滑手势引起的pop操作
+NSString *const kPopWithPanGes = @"kPopWithPanGes";
+
 @interface HDFloatingBallManger()<UIGestureRecognizerDelegate>
 
 //需要监控的类

@@ -15,7 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIViewController *)currentViewController;
 
++ (UINavigationController *)currentNavigationController;
 
++ (UITabBarController *)currentTabBarController;
 
 @end
 

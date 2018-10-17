@@ -11,6 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSString *const kPopInteractiveKey;
+extern NSString *const kAnimatorKey;
+//该pop为右滑手势
+extern NSString *const kPopWithPanGes;
+
 @interface HDFloatingBallManger : NSObject
 
 //单例对象
