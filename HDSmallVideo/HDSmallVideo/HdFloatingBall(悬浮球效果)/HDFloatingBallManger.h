@@ -21,6 +21,9 @@ extern NSString *const kPopWithPanGes;
 //单例对象
 +(instancetype)shared;
 
+//添加需要监控添加悬浮球的控制器类名
+- (void)addFloatMonitorVCClasses:(NSArray<NSString *> *)VCClasses;
+
 //转场动画
 -(id<UIViewControllerAnimatedTransitioning>)floatingBallForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC;
 

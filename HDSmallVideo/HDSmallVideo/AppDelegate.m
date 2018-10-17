@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HDNavigationController.h"
 #import "ViewController.h"
+#import "HdFloatingBall(悬浮球效果)/HDFloatingBallManger.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +25,9 @@
 
     self.window.rootViewController = navigation;
     [self.window makeKeyAndVisible];
+    
+    //添加要监控的类名
+    [[HDFloatingBallManger shared] addFloatMonitorVCClasses:@[@"HDNextViewController"]];
     
     return YES;
 }

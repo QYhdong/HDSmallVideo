@@ -18,8 +18,6 @@
 
 @interface FloatTransitionAnimator()<CAAnimationDelegate>
 
-//转场动画类型 push/pop
-@property (nonatomic, assign) UINavigationControllerOperation operation;
 //悬浮球圆心坐标
 @property (nonatomic, assign) CGPoint center;
 //悬浮球半径
