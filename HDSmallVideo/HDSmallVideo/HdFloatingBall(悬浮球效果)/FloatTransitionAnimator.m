@@ -50,7 +50,6 @@
 }
 
 - (void)animateTransition:(nonnull id<UIViewControllerContextTransitioning>)transitionContext {
-    self.transitionContext = transitionContext;
     
     self.transitionContext = transitionContext;
     if (_operation == UINavigationControllerOperationPush) {
