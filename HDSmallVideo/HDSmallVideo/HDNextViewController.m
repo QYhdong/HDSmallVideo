@@ -20,7 +20,8 @@
     
     self.view.backgroundColor = [UIColor orangeColor];
     UILabel *label = [[UILabel alloc]initWithFrame:(CGRectMake(100, 100, 100, 100))];
-    label.text = @"手指侧滑返回";
+    label.textColor = [UIColor blackColor];
+    label.text = @"效果测试(手指侧滑返回)";
 
     [self.view addSubview:label];
     
