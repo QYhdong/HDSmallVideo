@@ -12,3 +12,5 @@ AVCaptureOutput 代表了输出数据源
 AVCaptureSession 用于协调输入与输出之间的数据流
 
 AVFoundation框架
+
+come on !
