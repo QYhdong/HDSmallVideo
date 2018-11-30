@@ -13,6 +13,8 @@
 @interface ViewController ()
 
 
+@property(nonatomic,assign) int leftTicketCount;//剩余票数
+
 @end
 
 @implementation ViewController
@@ -55,7 +57,98 @@
     pushBtn.center = self.view.center;
     [self.view addSubview:pushBtn];
     
+    _leftTicketCount = 60;
+    
+//    }
+//    dispatch_queue_t queue8 = dispatch_queue_create("dongHuang", DISPATCH_QUEUE_CONCURRENT);
+//    dispatch_async(queue8, ^{
+//        [NSThread sleepForTimeInterval:1];
+//        NSLog(@"BBB%@",[NSThread currentThread]);
+//
+//    });
+//
+//    dispatch_queue_t queue7 = dispatch_queue_create("dongHuang", DISPATCH_QUEUE_CONCURRENT);
+//    dispatch_async(queue7, ^{
+//        [NSThread sleepForTimeInterval:1];
+//        NSLog(@"CCC%@",[NSThread currentThread]);
+//
+//    });
+//
+//    dispatch_queue_t queue6 = dispatch_queue_create("dongHuang", DISPATCH_QUEUE_CONCURRENT);
+//    dispatch_async(queue6, ^{
+//        [NSThread sleepForTimeInterval:1];
+//        NSLog(@"DDD%@",[NSThread currentThread]);
+//
+//    });
+//
+//    dispatch_queue_t queue5 = dispatch_queue_create("dongHuang", DISPATCH_QUEUE_CONCURRENT);
+//    dispatch_async(queue5, ^{
+//        [NSThread sleepForTimeInterval:1];
+//        NSLog(@"EEE%@",[NSThread currentThread]);
+//
+//    });
+//
+//    dispatch_queue_t queue4 = dispatch_queue_create("dongHuang", DISPATCH_QUEUE_CONCURRENT);
+//    dispatch_async(queue4, ^{
+//        [NSThread sleepForTimeInterval:1];
+//        NSLog(@"FFF%@",[NSThread currentThread]);
+//
+//    });
+    
+    
+//    dispatch_queue_t queueee = dispatch_queue_create("dongHuanggg", DISPATCH_QUEUE_CONCURRENT);
+//        for (int i = 0; i<1000; i++){
+//            dispatch_async(queueee, ^{
+//                NSLog(@"BBBB哈哈哈哈--%d",i);
+//                NSLog(@"BBBB%@",[NSThread currentThread]);
+//            });
+//    }
+
 }
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    dispatch_queue_t queue = dispatch_queue_create("dongHuang", DISPATCH_QUEUE_CONCURRENT);
+
+    dispatch_async(queue, ^{
+//        [NSThread sleepForTimeInterval:1];
+        NSLog(@"AAA%@",[NSThread currentThread]);
+        [self saleTickets];
+    });
+    
+    dispatch_async(queue, ^{
+        NSLog(@"BBB%@",[NSThread currentThread]);
+        [self saleTickets];
+    });
+}
+
+// 卖票
+-(void)saleTickets
+{
+    while(true)
+    {
+        //模拟延时，卖出一张票后，让卖票的线程休眠1秒
+        [NSThread sleepForTimeInterval:1.0];
+        //判断是否有票
+        @synchronized(self)
+        {
+            if(self.leftTicketCount>0)
+            {
+                //如果有卖一张
+                self.leftTicketCount--;
+                //提示余额
+                NSLog(@"%@卖了一张票，剩余%d张票",[NSThread currentThread].name,self.leftTicketCount);
+                
+            }
+            else
+            {
+                //如果没有，提示用户
+                NSLog(@"没有余票");
+                return;
+            }
+        }
+    }
+}
+
 
 -(void)pushBtnClick{
  
