@@ -107,7 +107,7 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    dispatch_queue_t queue = dispatch_queue_create("dongHuang", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue = dispatch_queue_create("com.dongHuang", DISPATCH_QUEUE_CONCURRENT);
 
     dispatch_async(queue, ^{
 //        [NSThread sleepForTimeInterval:1];
