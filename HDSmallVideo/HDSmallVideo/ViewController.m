@@ -107,18 +107,38 @@
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    
+
+  
+    
     dispatch_queue_t queue = dispatch_queue_create("com.dongHuang", DISPATCH_QUEUE_CONCURRENT);
+    
+    
 
     dispatch_async(queue, ^{
 //        [NSThread sleepForTimeInterval:1];
         NSLog(@"AAA%@",[NSThread currentThread]);
+        [self performSelector:@selector(aaaaa) withObject:nil afterDelay:3];
         [self saleTickets];
     });
+      [NSThread sleepForTimeInterval:10];
     
-    dispatch_async(queue, ^{
-        NSLog(@"BBB%@",[NSThread currentThread]);
-        [self saleTickets];
-    });
+    
+    
+//    dispatch_async(queue, ^{
+//        NSLog(@"BBB%@",[NSThread currentThread]);
+//        [self saleTickets];
+//    });
+NSLog(@"aaaaaaaaaaa");
+
+
+    
+}
+
+-(void)aaaaa{
+    NSLog(@"aaaaaaaaaaa");
+    NSLog(@"%@",[NSThread currentThread]);
 }
 
 // 卖票

@@ -27,5 +27,8 @@
     
 }
 
+-(void)dealloc{
+//    NSLog(@"",)
+}
 
 @end
