@@ -108,10 +108,7 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    
 
-  
-    
     dispatch_queue_t queue = dispatch_queue_create("com.dongHuang", DISPATCH_QUEUE_CONCURRENT);
     
     
@@ -123,17 +120,14 @@
         [self saleTickets];
     });
       [NSThread sleepForTimeInterval:10];
+
+    dispatch_async(queue, ^{
+        NSLog(@"BBB%@",[NSThread currentThread]);
+        [self saleTickets];
+    });
     
-    
-    
-//    dispatch_async(queue, ^{
-//        NSLog(@"BBB%@",[NSThread currentThread]);
-//        [self saleTickets];
-//    });
 NSLog(@"aaaaaaaaaaa");
 
-
-    
 }
 
 -(void)aaaaa{

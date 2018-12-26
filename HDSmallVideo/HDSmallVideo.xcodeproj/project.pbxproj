@@ -25,6 +25,7 @@
 		6FAC17201F381D4400CC04EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FAC171E1F381D4400CC04EA /* LaunchScreen.storyboard */; };
 		6FAC172B1F381D4400CC04EA /* HDSmallVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC172A1F381D4400CC04EA /* HDSmallVideoTests.m */; };
 		6FAC17361F381D4400CC04EA /* HDSmallVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC17351F381D4400CC04EA /* HDSmallVideoUITests.m */; };
+		6FBD902321D36D8400A7F912 /* HdPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD902221D36D8400A7F912 /* HdPlayerView.m */; };
 		6FC4E46020EB72D900347F68 /* HDVideoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC4E45F20EB72D900347F68 /* HDVideoConfig.m */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,8 @@
 		6FAC17311F381D4400CC04EA /* HDSmallVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HDSmallVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FAC17351F381D4400CC04EA /* HDSmallVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDSmallVideoUITests.m; sourceTree = "<group>"; };
 		6FAC17371F381D4400CC04EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FBD902121D36D8400A7F912 /* HdPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HdPlayerView.h; sourceTree = "<group>"; };
+		6FBD902221D36D8400A7F912 /* HdPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HdPlayerView.m; sourceTree = "<group>"; };
 		6FC4E45E20EB72D900347F68 /* HDVideoConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDVideoConfig.h; sourceTree = "<group>"; };
 		6FC4E45F20EB72D900347F68 /* HDVideoConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HDVideoConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +178,7 @@
 		6FAC170F1F381D4400CC04EA /* HDSmallVideo */ = {
 			isa = PBXGroup;
 			children = (
+				6FBD901D21D31D6200A7F912 /* HdPlayer */,
 				6FA7D0C1217498690029350C /* HdFloatingBall(悬浮球效果) */,
 				6F3D2E252084BDC10040D011 /* HdSmallVideo */,
 				6FAC17131F381D4400CC04EA /* AppDelegate.h */,
@@ -217,6 +221,15 @@
 				6FAC17371F381D4400CC04EA /* Info.plist */,
 			);
 			path = HDSmallVideoUITests;
+			sourceTree = "<group>";
+		};
+		6FBD901D21D31D6200A7F912 /* HdPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6FBD902121D36D8400A7F912 /* HdPlayerView.h */,
+				6FBD902221D36D8400A7F912 /* HdPlayerView.m */,
+			);
+			path = HdPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +380,7 @@
 				6FA7D0C72174A0FB0029350C /* HDFloatingBallManger.m in Sources */,
 				6F49389C217602AA002F5709 /* OneFourthBallView.m in Sources */,
 				6FAC17121F381D4400CC04EA /* main.m in Sources */,
+				6FBD902321D36D8400A7F912 /* HdPlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
