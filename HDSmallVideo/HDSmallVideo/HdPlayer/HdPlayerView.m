@@ -47,8 +47,6 @@
     //自动播放
     self.isAutoPlay = YES;
     
-    
-    
 }
 
 
